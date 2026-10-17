@@ -865,11 +865,11 @@
 
       function manifestFilesMD5()
       {
-        return [ "2a374ef8eadd5d8e5dbb3fc2caa0bd79",
+        return [ "1f65c1391306a5d2add6102a91df0ab1",
 "7eb285d8ddb936cebc7b03e69bf13d75",
 "6344cea96b6757c3753745b7ebf72d7d",
 "e8f1e8db8cf996f8715a6f2164c2e44e",
-"27b1cd5898434fa97d317f096da6c072" ];
+"3c171d81dc6e052edcf6f5c6acd65dc1" ];
       }
 
       function onFirstFrameRendered()
@@ -959,22 +959,21 @@
 
         canvasElement.classList.add("active");
 
-        const BASE_W = 180, BASE_H = 320;          // game's pixel-art base resolution
+        const BASE_W = 360, BASE_H = 640;          // game's pixel-art base resolution
         const dpr = window.devicePixelRatio || 1;
         const cs = getComputedStyle(bodyElement);
         const maxWidth = window.innerWidth;
         const maxHeight = window.innerHeight - parseFloat(cs.paddingTop || 0) - parseFloat(cs.paddingBottom || 0);
         // biggest WHOLE number of device pixels per game pixel that fits the screen
-        var scale = Math.floor(Math.min(maxWidth * dpr / BASE_W, maxHeight * dpr / BASE_H));
-        var newWidth, newHeight;
-        if (scale >= 1) {
-          newWidth = BASE_W * scale / dpr;
-          newHeight = BASE_H * scale / dpr;
-        } else {                                  // tiny window: just fit it
-          var q = Math.min(maxWidth / startingWidth, maxHeight / startingHeight);
-          newWidth = startingWidth * q;
-          newHeight = startingHeight * q;
+        var fit = Math.min(maxWidth * dpr / BASE_W, maxHeight * dpr / BASE_H);   // device px per game px
+        var scale = Math.floor(fit);
+        if (scale < 1 || scale < fit * 0.85) {
+          // whole-number scale would leave too much empty screen: use the full fit instead,
+          // snapped to whole device pixels (a few rows/columns may be 1px wider than others)
+          scale = fit;
         }
+        var newWidth = Math.floor(BASE_W * scale) / dpr;
+        var newHeight = Math.floor(BASE_H * scale) / dpr;
         canvasElement.style.height = newHeight + "px";
         canvasElement.style.width = newWidth + "px";
       }
