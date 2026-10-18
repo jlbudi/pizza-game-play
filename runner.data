@@ -2,4 +2,4 @@
 EMSDKDir="c:/source/emsdk/emsdk_env.sh"
 [OperaGX]
 ProjectGuid=""
-../../../../../../tmp/web_gx.zip
+../../../../../../tmp/webpkg/PizzaGame.zip
