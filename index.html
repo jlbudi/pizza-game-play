@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="Pizza Game" />
   <meta name="theme-color" content="#060612" />
-  <meta name="pizza-build" content="28c17da" />
+  <meta name="pizza-build" content="dd755a7" />
   <title>Jordan's Pizza Game</title>
   <style>
     html, body { margin: 0; height: 100%; background: #060612; color: #c99a62; }
@@ -22,7 +22,7 @@
   <p id="msg">LOADING PIZZA GAME...</p>
   <script>
     (function () {
-      var FALLBACK = "b/28c17da/";   // newest build when this page was published
+      var FALLBACK = "b/dd755a7/";   // newest build when this page was published
       var done = false;
       function go(p) { if (done) return; done = true; location.replace(p + "index.html" + location.search + location.hash); }
       setTimeout(function () { go(FALLBACK); }, 4000);   // slow network: don't wait forever
@@ -33,6 +33,6 @@
         .catch(function () { go(FALLBACK); });
     })();
   </script>
-  <noscript>Please turn on JavaScript, or open <a href="b/28c17da/index.html">b/28c17da/index.html</a>.</noscript>
+  <noscript>Please turn on JavaScript, or open <a href="b/dd755a7/index.html">b/dd755a7/index.html</a>.</noscript>
 </body>
 </html>
