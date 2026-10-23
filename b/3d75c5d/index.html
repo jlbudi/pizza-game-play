@@ -9,19 +9,20 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <meta name="pizza-build" content="5a84afd" />
+    <meta name="pizza-build" content="3d75c5d" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <!-- Builtin injector for disabling cache -->
     
 
-    <title>Jordan's Pizza Game</title>
+    <title>Slice Wars</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Pizza Game" />
+    <meta name="apple-mobile-web-app-title" content="Slice Wars" />
     <meta name="theme-color" content="#060612" />
+    <script>(function(){var T="Slice Wars";var d=Object.getOwnPropertyDescriptor(Document.prototype,"title");Object.defineProperty(document,"title",{configurable:true,get:function(){return d.get.call(document);},set:function(v){d.set.call(document,(!v||String(v).indexOf("$"+"{")>=0||v=="PizzaGame")?T:v);}});})();</script>
 
     <!-- Custom PreStyle code is injected here -->
     
@@ -461,7 +462,7 @@
           if (!window.fetch) return;
           fetch("../../version.json?t=" + Date.now(), { cache: "no-store" })
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(function (j) { if (j && j.build && j.build !== "5a84afd") location.replace("../../" + location.search); })
+            .then(function (j) { if (j && j.build && j.build !== "3d75c5d") location.replace("../../" + location.search); })
             .catch(function () {});
         }
         check();
@@ -731,7 +732,7 @@
       var startingAspect;
       var Module = {
         // cache busting: runner.wasm / runner.data are requested as name?v=BUILD
-        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=5a84afd"; },
+        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=3d75c5d"; },
         preRun: [],
         postRun: [],
         print: (function () {
@@ -888,7 +889,7 @@
 "7eb285d8ddb936cebc7b03e69bf13d75",
 "6344cea96b6757c3753745b7ebf72d7d",
 "e8f1e8db8cf996f8715a6f2164c2e44e",
-"b09a6ffb61705f69414e64f069d8dcf7" ];
+"c36f981a49d1c5c20d62a1a6ca869205" ];
       }
 
       function onFirstFrameRendered()
@@ -1577,7 +1578,7 @@
         wallpaper_update_config(JSON.stringify(wallpaperConfig));
       }
     </script>
-    <script async type="text/javascript" src="runner.js?v=5a84afd"></script>
+    <script async type="text/javascript" src="runner.js?v=3d75c5d"></script>
 
     <!-- Custom BodyEnd code is injected here -->
     
