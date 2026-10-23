@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="Slice Wars" />
   <meta name="theme-color" content="#060612" />
-  <meta name="pizza-build" content="20559ca" />
+  <meta name="pizza-build" content="e2f945c" />
   <title>Slice Wars</title>
   <style>
     html, body { margin: 0; height: 100%; background: #060612; color: #c99a62; }
@@ -22,7 +22,7 @@
   <p id="msg">LOADING PIZZA GAME...</p>
   <script>
     (function () {
-      var FALLBACK = "b/20559ca/";   // newest build when this page was published
+      var FALLBACK = "b/e2f945c/";   // newest build when this page was published
       var done = false;
       function go(p) { if (done) return; done = true; location.replace(p + "index.html" + location.search + location.hash); }
       setTimeout(function () { go(FALLBACK); }, 4000);   // slow network: don't wait forever
@@ -33,6 +33,6 @@
         .catch(function () { go(FALLBACK); });
     })();
   </script>
-  <noscript>Please turn on JavaScript, or open <a href="b/20559ca/index.html">b/20559ca/index.html</a>.</noscript>
+  <noscript>Please turn on JavaScript, or open <a href="b/e2f945c/index.html">b/e2f945c/index.html</a>.</noscript>
 </body>
 </html>
