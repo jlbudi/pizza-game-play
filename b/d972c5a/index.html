@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <meta name="pizza-build" content="36b8ee9" />
+    <meta name="pizza-build" content="d972c5a" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -462,7 +462,7 @@
           if (!window.fetch) return;
           fetch("../../version.json?t=" + Date.now(), { cache: "no-store" })
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(function (j) { if (j && j.build && j.build !== "36b8ee9") location.replace("../../" + location.search); })
+            .then(function (j) { if (j && j.build && j.build !== "d972c5a") location.replace("../../" + location.search); })
             .catch(function () {});
         }
         check();
@@ -732,7 +732,7 @@
       var startingAspect;
       var Module = {
         // cache busting: runner.wasm / runner.data are requested as name?v=BUILD
-        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=36b8ee9"; },
+        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=d972c5a"; },
         preRun: [],
         postRun: [],
         print: (function () {
@@ -889,7 +889,7 @@
 "7eb285d8ddb936cebc7b03e69bf13d75",
 "6344cea96b6757c3753745b7ebf72d7d",
 "e8f1e8db8cf996f8715a6f2164c2e44e",
-"17bb97e88f038f045b24e235d71149a0" ];
+"0d6f9ace5cba392d40a1fdb737b2e027" ];
       }
 
       function onFirstFrameRendered()
@@ -1578,7 +1578,7 @@
         wallpaper_update_config(JSON.stringify(wallpaperConfig));
       }
     </script>
-    <script async type="text/javascript" src="runner.js?v=36b8ee9"></script>
+    <script async type="text/javascript" src="runner.js?v=d972c5a"></script>
 
     <!-- Custom BodyEnd code is injected here -->
     
