@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <meta name="pizza-build" content="ff4bd90" />
+    <meta name="pizza-build" content="b3062cf" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -462,7 +462,7 @@
           if (!window.fetch) return;
           fetch("../../version.json?t=" + Date.now(), { cache: "no-store" })
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(function (j) { if (j && j.build && j.build !== "ff4bd90") location.replace("../../" + location.search); })
+            .then(function (j) { if (j && j.build && j.build !== "b3062cf") location.replace("../../" + location.search); })
             .catch(function () {});
         }
         check();
@@ -732,7 +732,7 @@
       var startingAspect;
       var Module = {
         // cache busting: runner.wasm / runner.data are requested as name?v=BUILD
-        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=ff4bd90"; },
+        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=b3062cf"; },
         preRun: [],
         postRun: [],
         print: (function () {
@@ -889,7 +889,7 @@
 "7eb285d8ddb936cebc7b03e69bf13d75",
 "6344cea96b6757c3753745b7ebf72d7d",
 "e8f1e8db8cf996f8715a6f2164c2e44e",
-"437667f9af23d00bed29bf7c9aec535a" ];
+"d1eea074bfd97da71487e0974424b325" ];
       }
 
       function onFirstFrameRendered()
@@ -979,7 +979,7 @@
 
         canvasElement.classList.add("active");
 
-        const BASE_W = 360, BASE_H = 640;          // game's pixel-art base resolution
+        const BASE_W = 390, BASE_H = 844;          // game's pixel-art base resolution
         const dpr = window.devicePixelRatio || 1;
         const cs = getComputedStyle(bodyElement);
         const maxWidth = window.innerWidth;
@@ -1578,7 +1578,7 @@
         wallpaper_update_config(JSON.stringify(wallpaperConfig));
       }
     </script>
-    <script async type="text/javascript" src="runner.js?v=ff4bd90"></script>
+    <script async type="text/javascript" src="runner.js?v=b3062cf"></script>
 
     <!-- Custom BodyEnd code is injected here -->
     
