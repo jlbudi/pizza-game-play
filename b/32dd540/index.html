@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <meta name="pizza-build" content="ba3697b" />
+    <meta name="pizza-build" content="32dd540" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -462,7 +462,7 @@
           if (!window.fetch) return;
           fetch("../../version.json?t=" + Date.now(), { cache: "no-store" })
             .then(function (r) { return r.ok ? r.json() : null; })
-            .then(function (j) { if (j && j.build && j.build !== "ba3697b") location.replace("../../" + location.search); })
+            .then(function (j) { if (j && j.build && j.build !== "32dd540") location.replace("../../" + location.search); })
             .catch(function () {});
         }
         check();
@@ -732,7 +732,7 @@
       var startingAspect;
       var Module = {
         // cache busting: runner.wasm / runner.data are requested as name?v=BUILD
-        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=ba3697b"; },
+        locateFile: function (path, prefix) { return (prefix || "") + path + "?v=32dd540"; },
         preRun: [],
         postRun: [],
         print: (function () {
@@ -885,11 +885,11 @@
 
       function manifestFilesMD5()
       {
-        return [ "33549ee9bcc621a407d06cb7c1ca19a2",
+        return [ "2a374ef8eadd5d8e5dbb3fc2caa0bd79",
 "7eb285d8ddb936cebc7b03e69bf13d75",
 "6344cea96b6757c3753745b7ebf72d7d",
 "e8f1e8db8cf996f8715a6f2164c2e44e",
-"5235b324b5c6b9b74584c399bbb66526" ];
+"78079e9453ec9ac8881dba51e0c42ff1" ];
       }
 
       function onFirstFrameRendered()
@@ -1578,7 +1578,7 @@
         wallpaper_update_config(JSON.stringify(wallpaperConfig));
       }
     </script>
-    <script async type="text/javascript" src="runner.js?v=ba3697b"></script>
+    <script async type="text/javascript" src="runner.js?v=32dd540"></script>
 
     <!-- Custom BodyEnd code is injected here -->
     
