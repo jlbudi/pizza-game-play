@@ -1,0 +1,81 @@
+{
+  "canvas": [
+    128,
+    128
+  ],
+  "origin": [
+    64,
+    128
+  ],
+  "ovens": {
+    "oven_3star_steel_deck": {
+      "back": "oven_3star_steel_deck_back.png",
+      "front": "oven_3star_steel_deck_front.png",
+      "windows": [
+        {
+          "x": 29,
+          "y": 55,
+          "w": 60,
+          "h": 20
+        },
+        {
+          "x": 29,
+          "y": 88,
+          "w": 60,
+          "h": 19
+        }
+      ],
+      "glass": "oven_3star_steel_deck_glass.png"
+    },
+    "oven_4star_conveyor": {
+      "back": "oven_4star_conveyor_back.png",
+      "front": "oven_4star_conveyor_front.png",
+      "windows": [
+        {
+          "x": 29,
+          "y": 50,
+          "w": 64,
+          "h": 46
+        }
+      ]
+    },
+    "oven_5star_woodfired_dome": {
+      "back": "oven_5star_woodfired_dome_back.png",
+      "front": "oven_5star_woodfired_dome_front.png",
+      "windows": [
+        {
+          "x": 43,
+          "y": 69,
+          "w": 42,
+          "h": 21
+        }
+      ]
+    },
+    "oven_1star_handmedown": {
+      "back": "oven_1star_handmedown_back.png",
+      "front": "oven_1star_handmedown_front.png",
+      "glass": "oven_1star_handmedown_glass.png",
+      "windows": [
+        {
+          "x": 29,
+          "y": 81,
+          "w": 56,
+          "h": 23
+        }
+      ]
+    },
+    "oven_2star_brick_hearth": {
+      "back": "oven_2star_brick_hearth_back.png",
+      "front": "oven_2star_brick_hearth_front.png",
+      "glass": "oven_2star_brick_hearth_glass.png",
+      "windows": [
+        {
+          "x": 40,
+          "y": 83,
+          "w": 44,
+          "h": 24
+        }
+      ]
+    }
+  }
+}
